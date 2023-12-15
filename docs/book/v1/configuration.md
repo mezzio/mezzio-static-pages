@@ -1,16 +1,3 @@
-# Installation
-
-If you want the package to be automatically enabled when running composer require/install/update, your project needs to use the [laminas-component-installer][laminas-component-installer-url].
-If it does, when the package is installed you'll be asked if you want to enable its ConfigProvider. Answer with Y and the package will be ready to use.
-
-If you don't use laminas-component-installer, or for some reason or other can't, then ensure that `\StaticPages\ConfigProvider::class`, is in the `ConfigAggregator` list in _config/config.php_, as in the example below.
-
-```php
-$aggregator = new ConfigAggregator([
-    \StaticPages\ConfigProvider::class,
-]);
-```
-
 # Configuration
 
 Three steps are required to configure the package in your Mezzio project:
@@ -54,5 +41,3 @@ Finally, you need to create the static template files in the nominated template 
 The files can contain whatever you like, it doesn't matter.
 
 All being well, this should be all that you need to rapidly serve static content files in your Mezzio applications.
-
-[laminas-component-installer-url]: https://docs.laminas.dev/laminas-component-installer/
