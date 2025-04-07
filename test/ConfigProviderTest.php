@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * @covers \Mezzio\StaticPages\ConfigProvider
  */
-class ConfigProviderTest extends TestCase
+final class ConfigProviderTest extends TestCase
 {
     public function testHasDependencies(): void
     {
